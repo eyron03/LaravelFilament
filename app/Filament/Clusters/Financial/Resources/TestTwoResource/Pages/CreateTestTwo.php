@@ -12,12 +12,5 @@ class CreateTestTwo extends CreateRecord
 }
 asasas
 dwdwd
-dwdweweweewewe
-dwdwdeweweewewewewee
-wewewewewewe
-wewewe
-eweweewewedwddw
-eweweewewe
-ewewe
-dwd
+dwdw
 dwdwd
