@@ -9,12 +9,4 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateTestTwo extends CreateRecord
 {
     protected static string $resource = TestTwoResource::class;
-    sdsd
-dssd
-sdsdwqwqw
-weweweweweqwqwwqwqw
-ewewewewedwewe
-r3r3wewewdwd
-qeqeeqeqeewewe
-eweweweeweweweewewe
-wewe
+}
