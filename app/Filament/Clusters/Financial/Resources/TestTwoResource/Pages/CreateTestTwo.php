@@ -9,5 +9,4 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateTestTwo extends CreateRecord
 {
     protected static string $resource = TestTwoResource::class;
-    sdsddsdsddsddsdsdssdsddsdsd
-}
+    sdsd
