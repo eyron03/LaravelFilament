@@ -10,5 +10,6 @@ use Filament\Clusters\Cluster;
 
 class Financial extends Cluster
 {
-    pssadadad
+    protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
+
 }
