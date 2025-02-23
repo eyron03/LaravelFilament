@@ -13,5 +13,5 @@ class Financial extends Cluster
     protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
 dsdsddadad
 }
-asasdadad
+asasdadaddsdsd
 dadad
