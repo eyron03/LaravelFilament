@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Clusters\Financial\Resources;
 
-use App\Filament\Resources\ExpenseResource\Pages;
-use App\Filament\Resources\ExpenseResource\RelationManagers;
-use App\Models\Expense;
+use App\Filament\Clusters\Financial;
+use App\Filament\Clusters\Financial\Resources\TestTwoResource\Pages;
+use App\Filament\Clusters\Financial\Resources\TestTwoResource\RelationManagers;
+use App\Models\TestTwo;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,11 +14,13 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ExpenseResource extends Resource
+class TestTwoResource extends Resource
 {
-    protected static ?string $model = Expense::class;
+    protected static ?string $model = TestTwo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+    protected static ?string $cluster = Financial::class;
 
     public static function form(Form $form): Form
     {
@@ -31,14 +34,7 @@ class ExpenseResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                //
             ])
             ->filters([
                 //
@@ -63,9 +59,9 @@ class ExpenseResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListExpenses::route('/'),
-            'create' => Pages\CreateExpense::route('/create'),
-            'edit' => Pages\EditExpense::route('/{record}/edit'),
+            'index' => Pages\ListTestTwos::route('/'),
+            'create' => Pages\CreateTestTwo::route('/create'),
+            'edit' => Pages\EditTestTwo::route('/{record}/edit'),
         ];
     }
 }

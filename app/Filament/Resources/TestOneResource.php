@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ExpenseCategoryResource\Pages;
-use App\Filament\Resources\ExpenseCategoryResource\RelationManagers;
-use App\Models\ExpenseCategory;
+use App\Filament\Resources\TestOneResource\Pages;
+use App\Filament\Resources\TestOneResource\RelationManagers;
+use App\Models\TestOne;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ExpenseCategoryResource extends Resource
+class TestOneResource extends Resource
 {
-    protected static ?string $model = ExpenseCategory::class;
+    protected static ?string $model = TestOne::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -31,14 +31,7 @@ class ExpenseCategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                //
             ])
             ->filters([
                 //
@@ -63,9 +56,9 @@ class ExpenseCategoryResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListExpenseCategories::route('/'),
-            'create' => Pages\CreateExpenseCategory::route('/create'),
-            'edit' => Pages\EditExpenseCategory::route('/{record}/edit'),
+            'index' => Pages\ListTestOnes::route('/'),
+            'create' => Pages\CreateTestOne::route('/create'),
+            'edit' => Pages\EditTestOne::route('/{record}/edit'),
         ];
     }
 }

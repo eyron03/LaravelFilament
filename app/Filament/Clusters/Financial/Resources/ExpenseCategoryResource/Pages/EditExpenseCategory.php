@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\ExpenseCategoryResource\Pages;
+namespace App\Filament\Clusters\Financial\Resources\ExpenseCategoryResource\Pages;
 
-use App\Filament\Resources\ExpenseCategoryResource;
+use App\Filament\Clusters\Financial\Resources\ExpenseCategoryResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 

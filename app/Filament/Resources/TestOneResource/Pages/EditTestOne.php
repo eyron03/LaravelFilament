@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\ExpenseResource\Pages;
+namespace App\Filament\Resources\TestOneResource\Pages;
 
-use App\Filament\Resources\ExpenseResource;
+use App\Filament\Resources\TestOneResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditExpense extends EditRecord
+class EditTestOne extends EditRecord
 {
-    protected static string $resource = ExpenseResource::class;
+    protected static string $resource = TestOneResource::class;
 
     protected function getHeaderActions(): array
     {
