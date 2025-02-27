@@ -9,8 +9,7 @@ use App\Models\ExpenseCategory;
 use Filament\Clusters\Cluster;
 
 class Financial extends Cluster
-{sasas
+{
     protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
-dadad
-}
-sasassasas
+
+}sasas
